@@ -6,9 +6,8 @@ provisioner:
   name: chef_solo
 
 platforms:
-  - name: ubuntu-12.04
+  - name: debian-6.0.10
 
 suites:
   - name: default
     run_list: ["sshenv::install"]
-    attributes:
