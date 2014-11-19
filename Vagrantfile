@@ -29,6 +29,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         "recipe[sshenv::install]"
     ]
 
-    chef.log_level = :debug
+    chef.log_level = :error
   end
 end

@@ -18,3 +18,8 @@ bin/*
 
 .kitchen/
 .kitchen.local.yml
+.yardoc/*
+doc/**/*
+
+.fuse*
+.history
