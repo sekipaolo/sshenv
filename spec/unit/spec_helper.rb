@@ -1,7 +1,6 @@
 
 require 'chefspec'
 require 'chefspec/berkshelf'
-require 'rds'
 
 ChefSpec::Coverage.start!
 

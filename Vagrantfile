@@ -12,7 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.omnibus.chef_version = :latest
 
-  config.vm.box = "chef/ubuntu-14.04"
+  config.vm.box = "debian-1.0.10"
 
   config.vm.network :private_network, ip: "33.33.33.40"
 
@@ -26,7 +26,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     chef.run_list = [
       
-        "recipe[sshenv::install]"
+        "recipe[sshenv::_test_create]"
     ]
 
     chef.log_level = :error

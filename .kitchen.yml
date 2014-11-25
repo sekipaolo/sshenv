@@ -9,5 +9,5 @@ platforms:
   - name: debian-6.0.10
 
 suites:
-  - name: default
-    run_list: ["sshenv::install"]
+  - name: create
+    run_list: ["sshenv::_test_create"]
